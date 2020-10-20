@@ -2,7 +2,6 @@ import React from 'react';
 import { Switch, Route } from 'react-router-dom';
 import './scss/styles.scss';
 import Home from './pages/Home'
-import AllBooks from './pages/AllBooks'
 
 function App() {
   return (

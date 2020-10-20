@@ -9,7 +9,7 @@ class Book extends Component {
                 <div className="img-container">
                     <img src={BookImg} alt="book" />
                     <div className="img-cover">
-                        <button className="add-cart">Add to Cart</button>
+                        <button className="add-cart">{this.props.buttonTxt}</button>
                     </div>
                 </div>
                 <h3 className="book-title">Book Title</h3>

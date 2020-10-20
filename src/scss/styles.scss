@@ -12,11 +12,9 @@
         position: relative;
         height: 30vh;
         img {
-            aspect-ratio: 16/9;
             width: 100%;
         }
         .img-cover {
-            aspect-ratio: 16/9;
             width: 22vh;
             height: 29.8vh;
             background-color: rgba($color: #fff, $alpha: .4);
@@ -53,21 +51,123 @@
 .container {
     display: flex;
     width: 100%;
+    height: 115vh;
+    .main-title {
+        font-size: 4rem;
+        margin-bottom: 8vh;
+    }
 }
 
-aside {
+.sidebar {
     width: 15%;
-    height: 100vh;
+    height: 100%;
     background-color: $accent-color;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: $main-color;
+    padding-top: 2vh;
+    .main-title {
+        color: $main-color;
+    }
+
+    #search-bar {
+        width: 11vw;
+        height: 4vh;
+        padding: 1vh;
+        border-radius: 5px;
+        border: none;
+    }
+
+    .nav-links {
+        list-style: none;
+        text-align: center;
+        li {
+            font-size: 2rem;
+            margin: 3vh 0;
+        }
+    }
+
+    footer {
+        margin-top: auto;
+        margin-bottom: 2vh;
+    }
+}
+
+.top-bar {
+
+    width: 95%;
+    display: flex;
+    padding-top: 2vh;
+    //justify-content: space-between;
+    .main-title {
+        color: $accent-color;
+    }
+
+    .top-buttons {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 8vh;
+
+        .cart {
+            
+            .cart-list {
+                border: 2px solid $accent-color;
+                border-radius: 10px;
+                padding: 1rem;
+                list-style: none;
+                .cart-item {
+                    display: flex;
+                    width: 18vw;
+                    .cart-book-container {
+                        text-align: center;
+                        color: $accent-color;
+                        display: flex;
+                        flex-direction: row;
+                        .img-container {
+                            img {
+                                width: 9vh;
+                            }
+                        }
+                    }
+                    .cart-item-details {
+                        text-align: left;
+                        margin-left: 1vw;
+                    }
+                    .cart-buttons {
+                        margin-left: auto;
+                        display: flex;
+                        flex-direction: column;
+                        label {
+                            color: $accent-color;
+                        }
+                        input {
+                            width: 3rem;
+                            padding: .25rem;
+                            margin-left: 1rem;
+                            border-radius: 5px;
+                            border: 2px solid $accent-color;
+                        }
+                        img {
+                            margin-top: auto;
+                            margin-left: auto;
+                            width: 1.5rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
 .page-content {
     width: 85%;
-    padding-left: 1vw;
+    padding-left: 2vw;
 }
 
 .book-list-page {
-    width: 100%;
+    width: 95%;
 
     .list-title {
         color: $accent-color;
